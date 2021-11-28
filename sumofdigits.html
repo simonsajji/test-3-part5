@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // To find the sum of odd digits and even digits of a number
+
+        var num=prompt("Enter the number:");
+        var odd=0;
+        var even=0;
+        for(var i=0;i<num.length;i++){
+            if(parseInt(num.charAt(i))%2==0){
+                even=even+parseInt(num.charAt(i));
+
+            }
+            else{
+                odd=odd+parseInt(num.charAt(i));
+
+            }
+        }
+
+        console.log("Even sum is: ",even);
+        document.write("Even sum is: ",even);
+        console.log("Odd sum is: ",odd);
+        document.write("Odd sum is: ",odd);
+        
+    </script>
+</body>
+</html>
